@@ -93,24 +93,24 @@ module tb_seg_axis_2_axis #(
         .FIFO_DEPTH (FIFO_DEPTH),
         .ASYNC_FIFO (1)
     ) dut (
-        .s_clk             (s_clk),
-        .s_rst             (s_rst),
-        .s_axis_seg_tdata  (s_axis_seg_tdata),
-        .s_axis_seg_tvalid (s_axis_seg_tvalid),
-        .s_axis_seg_tready (s_axis_seg_tready),
-        .s_ena             (s_axis_seg_tuser_ena),
-        .s_sop             (s_axis_seg_tuser_sop),
-        .s_eop             (s_axis_seg_tuser_eop),
-        .s_err             (s_axis_seg_tuser_err),
-        .s_mty             (s_axis_seg_tuser_mty),
-        .m_clk             (m_clk),
-        .m_rst             (m_rst),
-        .m_axis_tdata      (m_axis_tdata),
-        .m_axis_tkeep      (m_axis_tkeep),
-        .m_axis_tvalid     (m_axis_tvalid),
-        .m_axis_tready     (m_axis_tready),
-        .m_axis_tlast      (m_axis_tlast),
-        .m_axis_tuser      (m_axis_tuser)
+        .s_clk               (s_clk),
+        .s_rst               (s_rst),
+        .s_axis_seg_tdata    (s_axis_seg_tdata),
+        .s_axis_seg_tvalid   (s_axis_seg_tvalid),
+        .s_axis_seg_tready   (s_axis_seg_tready),
+        .s_axis_seg_tuser_ena(s_axis_seg_tuser_ena),
+        .s_axis_seg_tuser_sop(s_axis_seg_tuser_sop),
+        .s_axis_seg_tuser_eop(s_axis_seg_tuser_eop),
+        .s_axis_seg_tuser_err(s_axis_seg_tuser_err),
+        .s_axis_seg_tuser_mty(s_axis_seg_tuser_mty),
+        .m_clk               (m_clk),
+        .m_rst               (m_rst),
+        .m_axis_tdata        (m_axis_tdata),
+        .m_axis_tkeep        (m_axis_tkeep),
+        .m_axis_tvalid       (m_axis_tvalid),
+        .m_axis_tready       (m_axis_tready),
+        .m_axis_tlast        (m_axis_tlast),
+        .m_axis_tuser        (m_axis_tuser)
     );
 
     // ---------------------------------------------------------------------------

@@ -113,7 +113,7 @@ module unaligned_seg_axis_2_axis #(
 
     wire [$clog2(FIFO_DEPTH):0] s_status_depth;
 
-    assign s_fifo_almost_full = s_status_depth >= FIFO_DEPTH - 5*KW; // do not change this, used downstream as tready handshake
+    assign s_fifo_almost_full = s_status_depth >= FIFO_DEPTH - 6*KW; // do not change this, used downstream as tready handshake
 
     // exactly one bit set
     function is_onehot;
